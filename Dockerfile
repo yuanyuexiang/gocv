@@ -1,6 +1,6 @@
 # to build this docker image:
 #   docker build -f Dockerfile.opencv -t gocv/opencv:4.5.1 .
-FROM golang:1.15-buster AS opencv
+FROM golang:1.16.2-stretch AS opencv
 LABEL maintainer="hybridgroup"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
